@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Joyraj Yumnam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            background: #444;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .home {
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: scale(0.8);
+            transition: transform 0.5s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+        }
+        #contact i{
+            font-size: x-large;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            .home{
+                font-size: large;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joyraj Yumnam - Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="home">
+        <h2>Welcome!</h2>
+        <div class="work">I'm a Joyraj Yumnam a</div>
+        <div class="work"><span id="element"></span></div>
+        <div class="image-container">
+            <img src="photo.jpg" alt="Joyraj Yumnam">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a B.Tech student and aspiring web developer. I specialize in crafting responsive and user-friendly websites. With a strong learning ability, I am excited to contribute to meaningful projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="tic-tac-toe.png" alt="Project 1">
+                <h3>Game</h3>
+                <p>A Tic-Tac-Toe game made using HTML,CSS and javascript</p>
+                <br>
+                <a href="https://github.com/joyrajyum/Tic-tac-toe-game.git">Source code</a>
+            </div>
+            <div class="project-card">
+                <img src="amazone-img.png" alt="Project 2">
+                <h3>Amazone Clone</h3>
+                <p>In this project i clone the amazone website using HTML and CSS</p>
+                <br>
+                <a href="https://github.com/joyrajyum/Amazone-clone.git">Source Code</a>
+            </div>
+            <div class="project-card">
+                <img src="E-commerce-img.png" alt="Project 3">
+                <h3>E-Commerce</h3>
+                <p>It is a basic E-Commerce website which sells mobile phones of different brands</p>
+                <br>
+                <a href="https://github.com/joyrajyum/shopping-website">Source Code</a>
+            </div>
+        </div>
+        <br>
+        <h6>You can check the projects ,the source code have been provided just underneath the projects</h2>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to work with me or just say hi, feel free to contact me via...</p>
+        <ul>
+            <a href="https://www.linkedin.com/in/Joyraj Yumnam" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/8837376886" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/joyrajyumnam" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Joyraj Yumnam. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Fronted Web Developer.','Web Designer',  'Web Developer.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
